@@ -1,0 +1,15 @@
+---
+name: test
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: |
+          echo test
+      - uses: alonbl/ci-test2/a1@test1
